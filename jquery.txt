@@ -1,0 +1,276 @@
+基本??器
+$("*")
+$("lastname")
+$(".intor")
+$(".intor,.demo")
+$("p")
+$("h1,p,div")
+?次??器
+$("p:first")
+$("p:last")
+$("tr:even")
+$("tr:odd")
+$("p:first-child")
+$("p:first-of-type")
+$("p:last-child")
+$("p:last-of-type")
+$("p:nth-child(2)")
+$("p:nth-last-child(2)")
+$("p:nth-of-type(2)")
+$("p:nth-last-of-type(2)")
+$("p:only-child")
+$("p:only-of-type")
+$("div > p")
+$("div p")
+$("div + p")
+$("div  p")
+????器(重点)
+$("ul li:eq(3)")
+$("ul li:gt(3)")
+$("ul li:lt(3)")
+内容????器
+$("input:not(:empty)")
+$(":header")
+$(":animated")
+$(":focus")
+$(":contains("Hello")")
+$("div:has(p)")
+$(":empty")
+$(":parent")
+可?性????器
+$("p:hidden")
+$("table:visible")
+$(":root")
+$("p:lang(de)")
+属性????器
+$("[href]")
+$("[href='default.html']")
+$("[href!='default.html']")
+$("[href$='.jpg']")
+$("[title|='Tommorrow']")
+$("[title^='Tom']")
+$("input[id][name$='man']")
+表???器
+&(":input")
+&(":text")
+&(":password")
+&(":radio")
+&(":checkbox")
+&(":submit")
+$(":reset")
+&(":button")
+$(":image")
+$(":file")
+状?????器
+$(":enabled")
+$(":disabled")
+$(":selected")
+$(":checked")
+
+
+事件方法
+bind()
+unbind()
+delegate()
+undelegate()
+on()
+off()
+blur()
+change()
+click()
+dbclick()
+
+event.currentTatget
+event.data
+event.delegateTarget
+event.preventDefault()
+event.isDefaultPrevented()
+
+event.stopImmediatePropagation()
+event.isImmediatePropagationStopped()
+event.stopPropagation()
+event.isPropagationStopped()
+event.namespace
+event.pageX
+event.pageY
+event.target,nodename
+event.timeStamp
+event.type
+event.which
+event.metakey
+focus()
+focusin()
+focusout()
+hover()
+keydown()
+keyup()
+mousedown()
+mouseenter()
+mouseleave()
+mousemove()
+mouseout()
+mouseover()
+mouseup()
+one()
+ready()
+resize()
+scroll()
+select()
+submit()
+trigger()
+triigerhandler()
+
+contextmenu()
+$.holdReady()
+
+效果方法
+animate()
+clearQueue()
+delay()
+queue()
+dequeue()
+fadein()
+fadeout()
+fadeto()
+fadetoggle()
+finish()
+hide()
+show()
+slidedown()
+slideup()
+slideToggle()
+stop()
+toggle()
+
+HTML / CSS 方法
+
+addclass()
+after()
+append()
+appendTo()
+attr()
+before()
+clone()
+css()
+detach()
+empty()
+hasclass()
+height()
+html()
+innerHeight()
+innerWidth()
+outterHeight()
+outerWIdth()
+insetAfter()
+insetBefore()
+offset()
+positon()
+prepend()
+prependTo()
+prop()
+remove()
+removeattr()
+removeclass()
+removeAttr()
+replaceAll()
+replaceWith()
+
+offsetParent()
+scrollLeft()
+scrollTop()
+text()
+toggleClass()
+unwrap()
+val()
+width()
+wrap()
+wrapAll()
+wraoInner()
+遍?方法
+
+add()
+children()
+closest()
+contents()
+each()
+eq()
+filter()
+find()
+first()
+has()
+is()
+last()
+nextALl()
+nextUntil()
+not()
+offsetParent()
+parent()
+parents()
+parentsUntil()
+prev()
+prevAll()
+prevUntil()
+siblings()
+slice()
+
+AJAX 方法
+
+$.ajax()
+$.ajaxSetup()
+$.get()
+$.getJSON()
+$.getScript()
+$.param()
+$.post()
+ajaxComplete()
+ajaxError()
+ajaxSend()
+ajaxStart()
+ajaxStop()
+ajaxSuccess()
+load()
+serialize()
+serializeArray()
+
+??方法
+data()
+each()
+get()
+index()
+$.param()
+toArray()
+
+?用工具
+$.contains()
+$.each()
+$.extend()
+$.grep()
+$.isArray()
+$.isEmptyObject()
+$.isFunction()	判断指定参数是否是一个函数
+$.isNumeric()	判断指定参数是否是一个数字?
+$.isPlainObject()	判断指定参数是否是一个?粹的?象
+$.isWindow()	判断指定参数是否是一个窗口
+$.isXMLDoc()	判断一个DOM?点是否位于XML文档中，或者其本身就是XML文档
+$.makeArray()	将一个?似数?的?象???真正的数??象
+$.map()	指定函数?理数?中的?个元素(或?象的?个属性)，并将?理?果封装?新的数?返回
+$.merge()	合并?个数?内容到第一个数?
+$.noop()	一个空函数
+$.now()	返回当前??
+$.parseHTML()	将HTML字符串解析???的DOM?点数?
+$.parseJSON()	将符合?准格式的JSON字符串??与之??的JavaScript?象
+$.parseXML()	将字符串解析???的XML文档
+$.trim()	去除字符串?端的空白字符
+$.type()	?定JavaScript内置?象的?型
+$.unique()	在jQuery 3.0中被弃用。?DOM元素数??行排序，并移除重?的元素
+$.uniqueSort()	?DOM元素数??行排序，并移除重?的元素
+$.data()	在指定的元素上存取数据，并返回?置?
+$.hasData()	?定一个元素是否有相?的jQuery数据
+$.sub()	?建一个新的jQuery副本，其属性和方法可以修改，而不会影?原来的jQuery?象
+$.speed	?建一个包含一?属性的?象用来定?自定??画
+$.htmlPrefilter()	通?jQuery操作方法修改和??HTML字符串
+$.readyException()	?理包裹在jQuery()中函数同?抛出的??
+
+
+
+
